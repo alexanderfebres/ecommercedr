@@ -6,8 +6,7 @@ ALLOWED_HOSTS += os.environ.get("DJANGO_ALLOWED_HOSTS").split(" ")
 
 WSGI_APPLICATION = 'home.wsgi.prod.application'
 
-CORS_ORIGIN_ALLOW_ALL = True
-# CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS").split(" ")
+CORS_ALLOWED_ORIGINS = os.environ.get("CORS_ALLOWED_ORIGINS").split(" ")
 
 DATABASES = {
     'default': {
